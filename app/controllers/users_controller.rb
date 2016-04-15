@@ -3,6 +3,7 @@ post '/users' do
   if @user.save
     redirect "users/#{@user.id}"
   else
+    @errors = @user.errors.full_messages# still need to display error
     erb :'users/new'
   end
 end

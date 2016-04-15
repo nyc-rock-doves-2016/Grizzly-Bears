@@ -5,7 +5,7 @@ class CreateCards < ActiveRecord::Migration
       t.string :answer, null: false
       t.references :deck
 
-      t.timestamps null:false
+      t.timestamps null: false
     end
   end
 end

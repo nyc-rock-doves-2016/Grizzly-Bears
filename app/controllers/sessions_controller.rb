@@ -2,7 +2,7 @@ get '/login' do
   erb :'session/new'
 end
 
-get '/logout' do
+delete '/logout' do
   session.clear
   redirect '/'
 end
