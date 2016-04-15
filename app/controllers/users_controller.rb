@@ -14,7 +14,11 @@ end
 
 get '/users/:id' do
   @user = User.find(params[:id])
+  if logged_in?(@user)
   erb :'users/show'
+  else
+    "you are not authorized!"
+  end
 end
 
 

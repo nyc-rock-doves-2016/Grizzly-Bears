@@ -4,7 +4,7 @@ class CreateGuesses < ActiveRecord::Migration
       t.string :content, null: false
       t.references :card
       t.references :user
-      # t.references :round
+      t.references :round
 
       t.timestamps null: false
     end

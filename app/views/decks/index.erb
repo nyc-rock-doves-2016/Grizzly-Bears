@@ -1,7 +1,7 @@
 <h1>All Decks</h1>
 <ul>
   <% @decks.each do |deck|%>
-  <li>Deck Name: <%= deck.deck_name %></li>
+  <li>Deck Name: <a href='/decks/<%=deck.id%>'><%= deck.deck_name %></a></li>
   <li>Card Count: <%= deck.cards.count %></li>
   <% end %>
 </ul>

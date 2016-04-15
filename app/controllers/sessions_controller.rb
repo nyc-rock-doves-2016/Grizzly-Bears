@@ -1,3 +1,5 @@
+enable :sessions
+
 get '/login' do
   erb :'session/new'
 end

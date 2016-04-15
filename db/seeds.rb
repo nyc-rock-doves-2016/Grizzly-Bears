@@ -1,0 +1,5 @@
+User.create(username: 'testuser', password: 'pw')
+Round.create(user_id: '1', deck_id: '1')
+Deck.create(deck_name: 'testdeck')
+Card.create(question: 'test question', answer: 'test answer', deck_id: '1')
+Guess.create(content: 'test guess', card_id: '1', user_id: '1', round_id: '1')
