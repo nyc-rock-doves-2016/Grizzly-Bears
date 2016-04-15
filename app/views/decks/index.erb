@@ -1,0 +1,11 @@
+<h1>All Decks</h1>
+<ul>
+  <% @decks.each do |deck|%>
+  <li>Deck Name: <%= deck.deck_name %></li>
+  <li>Card Count: <%= deck.cards.count %></li>
+  <% end %>
+</ul>
+
+
+<a href= '/login'>Login</a><br><br>
+<a href= '/users/new'>Register</a>
