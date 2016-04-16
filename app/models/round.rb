@@ -10,8 +10,8 @@ class Round < ActiveRecord::Base
     # know which deck we are on
     # need round id
 
-    guesses = self.guesses.collect do |guess|
-      guess if guess.content == guess.card.answer
+    guesses = self.guesses.select do |guess|
+      guess.content == guess.card.answer
     end
     cards = guesses.map do |guess|
       guess.card
