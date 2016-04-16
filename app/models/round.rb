@@ -9,7 +9,8 @@ class Round < ActiveRecord::Base
     # goal: find out which cards in game in deck have been answered correctly
     # know which deck we are on
     # need round id
-    guesses = self.guesses.collect do |guess|
+
+    guesses = self.guesses.select do |guess|
       guess.content == guess.card.answer
     end
     cards = guesses.map do |guess|
