@@ -7,7 +7,7 @@ post '/guesses' do
   if Card.is_correct?(@guess, @card)
     redirect "/round/#{params[:round_id]}"
   else
-    # @errors = ["Incorrect answer, fool. The correct answer is #{@card.answer}"]
+    @errors = ["Incorrect answer, fool. The correct answer is #{@card.answer}"]
     redirect "/round/#{params[:round_id]}"
 
   end

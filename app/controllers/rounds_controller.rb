@@ -7,7 +7,10 @@ end
 
 get '/round/:id' do
   @round = Round.find(params[:id])
+  if @round.correct_cards.count < @round.deck.cards.count
   @selected_card = @round.select_card
-
   redirect "/round/#{@round.id}/card/#{@selected_card.id}"
+  else
+  erb :'rounds/show'
+  end
 end
