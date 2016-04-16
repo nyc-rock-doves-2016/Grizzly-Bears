@@ -4,3 +4,10 @@ post '/round' do
 
   redirect "/round/#{@round.id}/card/#{@selected_card.id}"
 end
+
+get '/round/:id' do
+  @round = Round.find(params[:id])
+  @selected_card = @round.select_card
+
+  redirect "/round/#{@round.id}/card/#{@selected_card.id}"
+end
