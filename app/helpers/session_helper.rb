@@ -1,8 +1,11 @@
-def logged_in?(user)
-  session[:user_id] == user.id
-end
+helpers do
 
-def current_user
+  def current_user
+    @current_user ||= User.find_by(id: session[:user_id])
+  end
 
-  User.find_by(id: session[:user_id])
+  def logged_in?
+    !!current_user
+  end
+
 end

@@ -1,0 +1,7 @@
+<%=@card.question%>
+
+<form action='/guesses' method='post'>
+<input type='hidden' name='card_id' value="<%=@card.id%>">
+  Your Answer?<input type='text' name='content' placeholder='Take a wild guess!'>
+  <input type='submit' value='Submit your answer!'>
+</form>
