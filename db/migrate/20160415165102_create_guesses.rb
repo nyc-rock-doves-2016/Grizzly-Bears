@@ -1,7 +1,8 @@
 class CreateGuesses < ActiveRecord::Migration
   def change
     create_table :guesses do |t|
-      t.string :content, null: false
+
+      t.string :content
       t.references :card
       t.references :user
       t.references :round

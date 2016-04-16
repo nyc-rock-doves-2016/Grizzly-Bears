@@ -5,4 +5,10 @@ class Card < ActiveRecord::Base
   has_many :guesses
 
 
+  def self.is_correct?(guess, card)
+    card.answer == guess.content
+  end
+
+
+
 end
