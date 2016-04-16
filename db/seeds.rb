@@ -11,3 +11,5 @@ Card.create(question: 'test question3', answer: 'test answer3', deck_id: '1')
 Card.create(question: 'test question4', answer: 'test answer4', deck_id: '1')
 
 Guess.create(content: 'test guess', card_id: '1', user_id: '1', round_id: '1')
+Guess.create(content: 'test guess2', card_id: '2', user_id: '1', round_id: '1')
+Guess.create(content: 'test guess3', card_id: '3', user_id: '1', round_id: '1')
