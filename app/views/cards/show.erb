@@ -1,8 +1,8 @@
 <html>
   <div class='login'>
     <a href= '/decks'>Home</a>
-    <a href= '/login'>Login</a>
-    <a href= '/users/new'>Register</a>
+   <!--  <a href= '/login'>Login</a>
+    <a href= '/users/new'>Register</a> -->
   </div>
   <div class="body">
     <div class="main-display">
@@ -16,6 +16,9 @@
         <br>
         <br>
         <p class="submit"><input type='submit' value='Submit'></p>
+        <p class="answer"><%= @card.answer %></p>
+        <a class="show-answer-button" href="#">show answer</p>
+          <a href="/round/<%=@round.id%>">Next Question</a>
       </form>
     </div>
   </div>

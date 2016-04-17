@@ -1,27 +1,28 @@
 <html>
   <div class='login'>
     <a href= '/decks'>Home</a>
- <!--    <form action='/logout' method='post'>
-        <input type='hidden' name='_method' value='delete'>
-        <input type='submit' value='Logout'>
-      </form> -->
+
+    <form action='/logout' method='post'>
+      <input type='hidden' name='_method' value='delete'>
+      <input type='submit' value='Logout'>
+    </form>
+
   </div>
   <div class="body">
     <div class="main-display">
       <h1 class= "header_name"><%=@user.username%>'s Profile</h1>
       <%@user.rounds.each do |round|%><br>
-      <%=round.deck.deck_name %><br>
-      Number of Cards <%=round.deck.cards.count%><br>
-      Number of Total Guesses <%=round.guesses.count%><br>
+
+      Game Name: <%=round.deck.deck_name %><br>
+      Cards in Deck: <%=round.deck.cards.count%><br>
+      Number of Total Guesses: <%=round.guesses.count%><br>
+       <%=round.created_at%><br>
       <%end%>
     </div>
     <br>
-    <div class="play">
-      <form action='/logout' method='post'>
-        <input type='hidden' name='_method' value='delete'>
-        <input type='submit' value='Logout'>
-      </form>
-    </div>
+
+    <br>
+
   </div>
 
 
