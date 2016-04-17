@@ -1,9 +1,12 @@
 
 
+
+<h3>End of Round Statistics</h3>
+
+
 Deck Played:<%=@round.deck.deck_name%>
-<br>
-Percent Correct: 100% good job!
-<br>
+<br><br>
+Number of cards answered correctly on first attempt: <%=@round.deck.cards.count - (@round.guesses.count - @round.deck.cards.count)%>
+<br><br>
 Total Guesses: <%=@round.guesses.count%>
 <br><br>
-<a href="/">Go back to list of games!</a>
