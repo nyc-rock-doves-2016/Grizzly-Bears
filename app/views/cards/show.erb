@@ -1,10 +1,25 @@
-<%= erb :_errors %>
+<html>
+  <div class='login'>
+    <a href= '/decks'>Home</a>
+    <a href= '/login'>Login</a>
+    <a href= '/users/new'>Register</a>
+  </div>
+  <div class="body">
+    <div class="main-display">
+      <h1 class= "header_name"><%=@card.question%></h1>
+    </div>
+    <div class="login-page">
+      <form action='/guesses' method='post'>
+        <input type='hidden' name='card_id' value="<%=@card.id%>">
+        <input type='hidden' name='round_id' value="<%=@round.id%>">
+        What's your Answer?<br><br><input type='text' name='content'>
+        <br>
+        <br>
+        <p class="submit"><input type='submit' value='Submit'></p>
+      </form>
+    </div>
+  </div>
 
-<%=@card.question%>
+</html>
 
-<form action='/guesses' method='post'>
-<input type='hidden' name='card_id' value="<%=@card.id%>">
-<input type='hidden' name='round_id' value="<%=@round.id%>">
-  Your Answer?<input type='text' name='content' placeholder='Take a wild guess!'>
-  <input type='submit' value='Submit your answer!'>
-</form>
+<center><%= erb :_errors %></center>

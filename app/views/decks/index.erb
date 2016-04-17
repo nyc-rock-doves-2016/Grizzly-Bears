@@ -1,11 +1,19 @@
-<h1>All Decks</h1>
-<ul>
-  <% @decks.each do |deck|%>
-  <li>Deck Name: <a href='/decks/<%=deck.id%>'><%= deck.deck_name %></a></li>
-  <li>Card Count: <%= deck.cards.count %></li>
-  <% end %>
-</ul>
+<html>
+  <div class='login'>
+    <a href= '/login'>Login</a>
+    <a href= '/users/new'>Register</a>
+  </div>
+  <div class="body">
+    <div class="main-display">
+      <h1 class= "header_name">Grizzly Bears Flash Cards</h1>
+    </div>
+    <ul class="deck">
+      <% @decks.each do |deck|%>
+      <li class="deck_text"><a href='/decks/<%=deck.id%>'><%= deck.deck_name %></a></li>
+      <li class="card_count">Card Count: <%= deck.cards.count %></li>
+      <% end %>
+    </ul>
+  </div>
 
 
-<a href= '/login'>Login</a><br><br>
-<a href= '/users/new'>Register</a>
+</html>

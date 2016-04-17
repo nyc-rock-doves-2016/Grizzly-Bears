@@ -29,27 +29,7 @@ html {
 
 ul {
   list-style: none;
-  letter-spacing: 3px;
-}
-
-.play {
-  margin: 50px 0px 0px 40px;
-  font-size: 25px;
-}
-
-.login-page {
-  margin: 50px 0px 0px 40px;
-  font-size: 25px;
-}
-
-.play:hover {
-  color: #d35400;
-  transition: color 0.2s;
-}
-
-.submit:hover {
-  color: #d35400;
-  transition: color 0.2s;
+  letter-spacing: 2px;
 }
 
 .card_count {

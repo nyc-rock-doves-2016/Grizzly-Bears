@@ -1,13 +1,14 @@
-* {
+/** {
   box-sizing: border-box;
 }
 
-html {
+h1 {
   font-family: lato;
+  font-size: 400px;
   font-weight: 300;
 }
-
-.body {
+*/
+/*.body {
   text-align: center;
 }
 
@@ -29,32 +30,11 @@ html {
 
 ul {
   list-style: none;
-  letter-spacing: 3px;
-}
-
-.play {
-  margin: 50px 0px 0px 40px;
-  font-size: 25px;
-}
-
-.login-page {
-  margin: 50px 0px 0px 40px;
-  font-size: 25px;
-}
-
-.play:hover {
-  color: #d35400;
-  transition: color 0.2s;
-}
-
-.submit:hover {
-  color: #d35400;
-  transition: color 0.2s;
+  letter-spacing: 2px;
 }
 
 .card_count {
   margin-bottom: 30px;
-  /*border-bottom: .5px solid;*/
 }
 
 
@@ -86,3 +66,5 @@ a:hover {
   transition: color 0.2s;
 }
 
+
+*/

@@ -1,5 +1,20 @@
-<h1><%=@deck.deck_name%></h1>
-<form action='/round' method='post'>
-  <input type='hidden' name='deck_id' value="<%=@deck.id%>">
-  <input type='submit' value='Play'>
-</form>
+<html>
+  <div class='login'>
+    <a href= '/decks'>Home</a>
+    <a href= '/login'>Login</a>
+    <a href= '/users/new'>Register</a>
+  </div>
+  <div class="body">
+    <div class="main-display">
+      <h1 class= "header_name"><%=@deck.deck_name%></h1>
+    </div>
+    <div class="play">
+      <form action='/round' method='post'>
+        <input type='hidden' name='deck_id' value="<%=@deck.id%>">
+        <input type='submit' value='Play Now'>
+      </form>
+    </div>
+  </div>
+
+
+</html>

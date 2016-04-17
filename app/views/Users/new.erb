@@ -1,8 +1,24 @@
-<h1>Create User</h1>
-<form action='/users' method='post'>
-  Username:<input type='text' name='user[username]' >
-  Password:<input type='password' name='user[password]'>
-  <input type='submit' value='Submit'>
-</form>
+<html>
+  <div class='login'>
+    <a href= '/decks'>Home</a>
+    <a href= '/login'>Login</a>
+    <a href= '/users/new'>Register</a>
+  </div>
+  <div class="body">
+    <div class="main-display">
+      <h1 class= "header_name">Create User</h1>
+    </div>
+    <div class="login-page">
+      <form action='/users' method='post'>
+        <input type='text' name='user[username]' placeholder='               Username'>
+        <br>
+        <br>
+        <input type='password' name='user[password]' placeholder='               Password'>
+        <br>
+        <br>
+        <p class="submit"><input type='submit' value='Submit'></p>
+      </form>
+    </div>
+  </div>
 
-<a href='/decks'>Home</a>
+</html>
