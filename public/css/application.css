@@ -86,3 +86,6 @@ a:hover {
   transition: color 0.2s;
 }
 
+.answer {
+  display: none;
+}

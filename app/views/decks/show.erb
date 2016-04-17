@@ -1,9 +1,9 @@
 <html>
   <div class='login'>
-
+    <%if !logged_in?%>
     <a href= '/login'>Login</a>
     <a href= '/users/new'>Register</a>
-
+    <%end%>
     <a href= '/decks'>Home</a>
   </div>
   <div class="body">
