@@ -1,7 +1,10 @@
 <html>
   <div class='login'>
+    <%if !logged_in?%>
     <a href= '/login'>Login</a>
     <a href= '/users/new'>Register</a>
+    <%end%>
+
   </div>
   <div class="body">
     <div class="main-display">
