@@ -6,6 +6,11 @@ class Round < ActiveRecord::Base
 
 
   def correct_cards
+    #ZM: Add a column to your guess that is called correct and is boolean.
+    # This logic will become simpler. ie
+    #return guesses.select(&:is_correct).collect(&card)
+
+
     # goal: find out which cards in game in deck have been answered correctly
     # know which deck we are on
     # need round id

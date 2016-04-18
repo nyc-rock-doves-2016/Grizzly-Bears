@@ -6,6 +6,7 @@
 
 Deck Played:<%=@round.deck.deck_name%>
 <br><br>
+<!--ZM: This should be a method on the model, and not done as a calculation on the view -->
 Number of cards answered correctly on first attempt: <%=@round.deck.cards.count - (@round.guesses.count - @round.deck.cards.count)%>
 <br><br>
 Total Guesses: <%=@round.guesses.count%>
